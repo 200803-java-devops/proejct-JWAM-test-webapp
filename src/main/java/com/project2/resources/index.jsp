@@ -40,7 +40,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome to JWAM</div>
-                <div class="masthead-heading text-uppercase">The Service on Kube</div>
+                <div class="masthead-heading text-uppercase">Where all your dreams come true!</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
             </div>
         </header>
