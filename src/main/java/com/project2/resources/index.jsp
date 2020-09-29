@@ -48,7 +48,7 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h2 class="section-heading text-uppercase">oposjdi</h2>
                     <h3 class="section-subheading text-muted">Allows app to be 'deployed'</h3>
                 </div>
                 <div class="row text-center">
