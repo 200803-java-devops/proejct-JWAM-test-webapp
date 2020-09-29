@@ -7,7 +7,7 @@ pipeline {
         stage('Pull')
         {
             steps {
-                git ${githubURL}
+                git "${githubURL}"
             }
         }
         stage('Test') {
@@ -29,10 +29,10 @@ pipeline {
                 {
                     docker.withTool('docker')
                     {
-                        repoId = ${dockerUser} +"/" +${projectName}
+                        repoId = "${dockerUser}/${projectName}"
                         sh 'docker -v'
                         image = docker.build(repoId)
-                        docker.withRegistry(${ContainerRegistryURL}, ${ContainerRegistryCredId})
+                        docker.withRegistry("${ContainerRegistryURL}", "${ContainerRegistryCredId}")
                         {
                             image.push()
                         }
