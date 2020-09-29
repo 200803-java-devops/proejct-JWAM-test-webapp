@@ -40,7 +40,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome to JWAM</div>
-                <div class="masthead-heading text-uppercase">The Service on Kube</div>
+                <div class="masthead-heading text-uppercase">Where all your dreams come true!</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
             </div>
         </header>
@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Allows app to be deployed</h3>
+                    <h3 class="section-subheading text-muted">Allows app to be 'deployed'</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
