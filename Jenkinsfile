@@ -7,6 +7,7 @@ pipeline {
         stage('Pull')
         {
             steps {
+                slackSend(color: 'good', channel: "${slackChannel}", message: "Starting build for '${projectName}'...")
                 git "${githubURL}"
             }
         }
@@ -47,7 +48,7 @@ pipeline {
             slackSend(color: 'good', channel: "${slackChannel}", message: "Maven project '${projectName}' has passed all tests and was successfully built and pushed to the CR.")
         }
         failure {
-            slackSend(color: 'danger', channel: "", message: "Maven project '${projectName}' has failed to complete pipeline.")
+            slackSend(color: 'danger', channel: "${slackChannel}", message: "Maven project '${projectName}' has failed to complete pipeline.")
         }
     }
     
