@@ -42,5 +42,13 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            slackSend(color: 'good', message: "Maven project ${projectName} has passed all tests and was successfully built and pushed to the CR.")
+        }
+        failure {
+            slackSend(color: 'danger', message: "Maven project ${projectName} has failed to complete pipeline.")
+        }
+    }
     
 }
